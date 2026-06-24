@@ -18,6 +18,13 @@ const AnimalDetails = () => {
     address: "",
   });
 
+  // 🔐 Proper login redirect (FIXED)
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  }, [user, navigate]);
+
   useEffect(() => {
     fetch("/animals.json")
       .then((res) => res.json())
@@ -27,12 +34,6 @@ const AnimalDetails = () => {
         setLoading(false);
       });
   }, [id]);
-
-  // 🔐 Login check
-  if (!user) {
-    navigate("/login");
-    return null;
-  }
 
   if (loading) {
     return <div className="text-center py-10 text-xl">Loading details...</div>;
@@ -67,14 +68,17 @@ const AnimalDetails = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-8">
       {/* ================= ANIMAL DETAILS ================= */}
-      <div className="border rounded-xl p-4 shadow">
-        <img
-          src={animal.image}
-          alt={animal.name}
-          className="w-full h-64 object-cover rounded"
-        />
+      <div className="border rounded-xl p-4 shadow space-y-4">
+        {/* ✅ FIXED IMAGE (FULL SHOW, NO CROP) */}
+        <div className="flex justify-center bg-gray-100 rounded p-2">
+          <img
+            src={animal.image}
+            alt={animal.name}
+            className="max-w-full max-h-[500px] object-contain"
+          />
+        </div>
 
-        <h2 className="text-2xl font-bold mt-4">{animal.name}</h2>
+        <h2 className="text-2xl font-bold">{animal.name}</h2>
 
         <p className="text-gray-600">{animal.description}</p>
 
@@ -130,7 +134,7 @@ const AnimalDetails = () => {
             onChange={handleChange}
             className="w-full border p-2 rounded"
             required
-          ></textarea>
+          />
 
           <button
             type="submit"

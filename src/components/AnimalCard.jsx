@@ -6,7 +6,11 @@ const AnimalCard = ({ animal }) => {
 
   return (
     <div className="border rounded-xl overflow-hidden shadow hover:shadow-lg">
-      <img src={image} alt={name} className="h-48 w-full object-cover" />
+      <img
+        src={image}
+        alt={name}
+        className="w-full h-64 object-contain bg-gray-100"
+      />
 
       <div className="p-4 space-y-2">
         <h2 className="text-xl font-bold">{name}</h2>
