@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Deshi Shahi Cow",
+    "type": "Cow",
+    "breed": "Local Deshi",
+    "price": 120000,
+    "weight": 280,
+    "age": 3,
+    "location": "Bogura",
+    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural food.",
+    "image": "https://i.postimg.cc/CMHQrF3B/Screenshot-2026-06-24-at-1-21-14-PM.png",
+    "category": "Large Animal"
+  },
+  {
+    "id": 2,
+    "name": "Sahiwal Premium Cow",
+    "type": "Cow",
+    "breed": "Sahiwal",
+    "price": 150000,
+    "weight": 320,
+    "age": 4,
+    "location": "Rajshahi",
+    "description": "Strong and healthy cow, perfect for Qurbani.",
+    "image": "https://i.postimg.cc/wTDTGs6m/Screenshot-2026-06-24-at-1-16-44-PM.png",
+    "category": "Large Animal"
+  },
+  {
+    "id": 3,
+    "name": "Black Goat",
+    "type": "Goat",
+    "breed": "Black Bengal",
+    "price": 25000,
+    "weight": 35,
+    "age": 1.5,
+    "location": "Dhaka",
+    "description": "Healthy goat, ideal for small Qurbani.",
+    "image": "https://i.postimg.cc/6q2xRFQb/Screenshot-2026-06-24-at-1-15-24-PM.png",
+    "category": "Small Animal"
+  },
+  {
+    "id": 4,
+    "name": "Boer Goat",
+    "type": "Goat",
+    "breed": "Boer",
+    "price": 45000,
+    "weight": 45,
+    "age": 2,
+    "location": "Khulna",
+    "description": "Imported Boer goat with high meat quality.",
+    "image": "https://i.postimg.cc/NMGgyNmQ/Screenshot-2026-06-24-at-1-14-07-PM.png",
+    "category": "Small Animal"
+  },
+  {
+    "id": 5,
+    "name": "Red Bull Cow",
+    "type": "Bull",
+    "breed": "Deshi Cross",
+    "price": 180000,
+    "weight": 350,
+    "age": 5,
+    "location": "Chattogram",
+    "description": "Big and strong bull suitable for Qurbani.",
+    "image": "https://i.postimg.cc/vTqD8JNJ/Screenshot-2026-06-24-at-1-11-54-PM.png",
+    "category": "Large Animal"
+  },
+  {
+    "id": 6,
+    "name": "White Goat Special",
+    "type": "Goat",
+    "breed": "Jamunapari",
+    "price": 50000,
+    "weight": 40,
+    "age": 2,
+    "location": "Sylhet",
+    "description": "Premium Jamunapari goat with excellent health.",
+    "image": "https://i.postimg.cc/Kz6PNgNf/Screenshot-2026-06-24-at-12-32-17-PM.png",
+    "category": "Small Animal"
+  }
+]
