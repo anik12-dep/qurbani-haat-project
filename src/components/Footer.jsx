@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -26,11 +27,26 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-bold mb-3">Social Links</h2>
 
-          <div className="flex flex-col gap-2">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-            <a href="#">LinkedIn</a>
+          <div className="flex flex-col gap-3">
+            <a href="#" className="flex items-center gap-2 hover:text-blue-400">
+              <FaFacebook className="text-xl" />
+              Facebook
+            </a>
+
+            <a href="#" className="flex items-center gap-2 hover:text-pink-400">
+              <FaInstagram className="text-xl" />
+              Instagram
+            </a>
+
+            <a href="#" className="flex items-center gap-2 hover:text-red-400">
+              <FaYoutube className="text-xl" />
+              YouTube
+            </a>
+
+            <a href="#" className="flex items-center gap-2 hover:text-blue-300">
+              <FaLinkedin className="text-xl" />
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
