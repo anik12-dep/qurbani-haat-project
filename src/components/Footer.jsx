@@ -18,9 +18,9 @@ const Footer = () => {
         {/* Contact */}
         <div>
           <h2 className="text-xl font-bold mb-3">Contact Info</h2>
-          <p>Email: support@qurbanihaat.com</p>
-          <p>Phone: +880 1712-345678</p>
-          <p>Location: Dhaka, Bangladesh</p>
+          <p className="text-sm">Email: support@qurbanihaat.com</p>
+          <p className="text-sm">Phone: +880 1712-345678</p>
+          <p className="text-sm">Location: Dhaka, Bangladesh</p>
         </div>
 
         {/* Social */}
@@ -29,22 +29,22 @@ const Footer = () => {
 
           <div className="flex flex-col gap-3">
             <a href="#" className="flex items-center gap-2 hover:text-blue-400">
-              <FaFacebook className="text-xl" />
+              <FaFacebook className="text-sm" />
               Facebook
             </a>
 
             <a href="#" className="flex items-center gap-2 hover:text-pink-400">
-              <FaInstagram className="text-xl" />
+              <FaInstagram className="text-sm" />
               Instagram
             </a>
 
             <a href="#" className="flex items-center gap-2 hover:text-red-400">
-              <FaYoutube className="text-xl" />
+              <FaYoutube className="text-sm" />
               YouTube
             </a>
 
             <a href="#" className="flex items-center gap-2 hover:text-blue-300">
-              <FaLinkedin className="text-xl" />
+              <FaLinkedin className="text-sm" />
               LinkedIn
             </a>
           </div>
